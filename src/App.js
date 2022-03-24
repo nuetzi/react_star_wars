@@ -1,8 +1,8 @@
 import "./App.css";
-import ShipsInfo from "./ShipsInfo";
+import Ship from "./Ship";
 
 export default function App () {
-  let state = ShipsInfo;
+  let state = Ship;
     return (
       <div className="container">
         {
