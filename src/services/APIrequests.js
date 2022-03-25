@@ -1,10 +1,7 @@
-export const BASE_URL = "https://swapi.dev/api";
-
-const createURL = (base, path) => `${base}${path}`;
-
-export const getShips = () => [
-    createURL(BASE_URL, "/starships/"),
-    {
-        method: "GET",
-    }
-];
+export default function APIrequests () {
+    return(
+        fetch("https://swapi.dev/api/starships/")
+            .then((response) => response.json())
+            .catch((error) => error.message)
+    );
+};
