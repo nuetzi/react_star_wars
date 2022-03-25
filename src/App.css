@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+
+.shipsContainer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+}

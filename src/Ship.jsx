@@ -14,7 +14,7 @@ export default function Ship () {
         <div className="shipsContainer">
             {ships.map((each, i) => {
                 return(
-                    <div id="starship" key={i}>
+                    <div className="starship" key={i}>
                         {each.name}
                     </div>
                 );
