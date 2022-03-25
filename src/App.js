@@ -1,11 +1,12 @@
+import React from "react";
 import "./App.css";
-import FetchShip from "./FetchShip";
+import Ship from "./Ship";
+import ShipList from "./ShipList";
 
 export default function App () {
-  let state = FetchShip;
     return (
       <div className="container">
-        
+        <ShipList />
       </div>
     );
 };
