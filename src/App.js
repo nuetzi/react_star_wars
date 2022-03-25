@@ -4,8 +4,8 @@ import Ship from "./Ship";
 
 export default function App () {
     return (
-      <div className="container">
-        {Ship}
+      <div className="appContainer">
+        {Ship()}
       </div>
     );
 };
