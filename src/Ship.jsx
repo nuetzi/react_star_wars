@@ -8,6 +8,7 @@ export default function Ship () {
     useEffect(() => {
         APIrequests()
             .then((response) => setShips(response.results))
+            .catch((error) => error.message)
     }, []);
 
     return (
