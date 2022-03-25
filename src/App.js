@@ -1,19 +1,11 @@
 import "./App.css";
-import Ship from "./Ship";
+import FetchShip from "./FetchShip";
 
 export default function App () {
-  let state = Ship;
+  let state = FetchShip;
     return (
       <div className="container">
-        {
-          state.map((each, i) => {
-            return (
-              <div key={i}>
-                {<Ship starship = {each.starship} />}
-              </div>
-            )
-          })
-        }
+        
       </div>
     );
 };
